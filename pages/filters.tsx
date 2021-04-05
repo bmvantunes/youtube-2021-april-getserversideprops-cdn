@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       query: context.query,
-      'rendered on the server at': new Date()
+      'rendered on the server at (UTC)': new Date()
         .toISOString()
         .replace('T', ' ')
         .replace('Z', ''),
